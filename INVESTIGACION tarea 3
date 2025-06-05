@@ -1,7 +1,7 @@
                                    RS-485
-RS-485 es un estándar de comunicación serial definido por ANSI/TIA/EIA-485-A, que especifica las características eléctricas de los transmisores y receptores
-para sistemas de comunicación serial. Utiliza señalización diferencial balanceada, lo que permite una transmisión robusta de datos en ambientes 
-industriales con interferencias eléctricas.
+RS-485 es un estándar de comunicación serial definido por ANSI/TIA/EIA-485-A, que especifica las características
+eléctricas de los transmisores y receptoresnpara sistemas de comunicación serial. Utiliza señalización diferencial
+balanceada, lo que permite una transmisión robusta de datos en ambientes industriales con interferencias eléctricas.
 
 -Características clave:
 Topología: Admite configuraciones punto a punto, multidrop y multipunto.
@@ -9,26 +9,34 @@ Distancia máxima: Hasta 1200 metros a velocidades más bajas.
 Velocidad de transmisión: Hasta 10 Mbps en distancias cortas.
 Número de dispositivos: Soporta al menos 32 dispositivos en el mismo bus.
 Conexión: Utiliza pares trenzados con señalización diferencial (líneas A y B).
-Terminación: Se recomienda el uso de resistencias de terminación para evitar reflexiones de señal y garantizar la integridad de los datos.
+Terminación: Se recomienda el uso de resistencias de terminación para evitar reflexiones de señal y garantizar
+la integridad de los datos.
 
 -Aplicaciones:
-Ampliamente utilizado en sistemas de control industrial, automatización de edificios, control de motores y aplicaciones de bus de campo 
+Ampliamente utilizado en sistemas de control industrial, automatización de edificios, control de motores y
+aplicaciones de bus de campo 
 debido a su capacidad para operar en entornos ruidosos y a largas distancias.
 
 
                        Entradas Digitales NPN y PNP
-Las entradas digitales NPN y PNP se refieren a la configuración de los transistores en sensores y dispositivos de entrada/salida en sistemas de automatización.
+Las entradas digitales NPN y PNP se refieren al tipo de transistor y forma de conexión eléctrica utilizada para 
+detectar señales digitales en sistemas de automatización, como sensores o botones. Una entrada PNP 
+(también llamada "sourcing") se activa cuando el dispositivo externo aplica un voltaje positivo (+V) a la entrada,
+es decir, el sensor envía corriente al PLC o dispositivo de control. En cambio, una entrada NPN (o "sinking") se activa
+cuando el dispositivo externo conecta la entrada al negativo (0V), es decir, el sensor recibe corriente desde el PLC. 
 
 -Diferencias principales:
 NPN funciona Cuando el sensor se activa, conecta la salida al negativo (0V), permitiendo que la corriente fluya hacia el dispositivo de entrada.
 Uso común: En sistemas donde el controlador detecta una señal al recibir corriente desde la salida del sensor.
 
-PNP funciona Cuando el sensor se activa, conecta la salida al positivo (+V), permitiendo que la corriente fluya desde el sensor hacia el dispositivo de entrada.
+PNP funciona Cuando el sensor se activa, conecta la salida al positivo (+V), permitiendo que la corriente fluya desde
+el sensor hacia el dispositivo de entrada.
 Uso común: En sistemas donde el controlador detecta una señal al recibir voltaje positivo desde la salida del sensor.
 
 
                      Entradas y Salidas Analógicas 0-10V
-Las señales analógicas de 0 a 10 voltios son utilizadas para representar valores variables, como la posición de una válvula o la velocidad de un motor.
+Las señales analógicas de 0 a 10 voltios son utilizadas para representar valores variables, como la posición de una
+válvula o la velocidad de un motor.
 
 -Características:
 Rango de señal: 0V representa el valor mínimo y 10V el valor máximo del parámetro medido o controlado.
@@ -37,11 +45,13 @@ Ventajas: Fácil de implementar y ampliamente compatible con muchos controladore
 Desventajas: Susceptible a interferencias eléctricas y caídas de voltaje en cables largos.
 
 -Aplicaciones:
-Control de iluminación, velocidad de motores, posición de actuadores y otros procesos donde se requiere una señal proporcional simple.
+Control de iluminación, velocidad de motores, posición de actuadores y otros procesos donde se requiere una señal
+proporcional simple.
 
 
                  Entradas y Salidas Analógicas 4-20 mA
-Las señales de corriente de 4 a 20 miliamperios son estándar en la transmisión de señales analógicas en entornos industriales.
+Las señales de corriente de 4 a 20 miliamperios son estándar en la transmisión de señales analógicas en entornos
+industriales.
 
 -Características:
 Rango de señal: 4 mA representa el valor mínimo y 20 mA el valor máximo del parámetro medido o controlado.
@@ -49,7 +59,8 @@ Ventajas:
 Menor susceptibilidad a interferencias eléctricas.
 Capacidad para transmitir señales a largas distancias sin pérdida significativa de señal.
 La corriente de 4 mA como punto de inicio permite detectar fallos en la señal (por ejemplo, circuito abierto).
-Desventajas: Requiere dispositivos compatibles con señales de corriente y puede ser más complejo de implementar que las señales de voltaje.
+Desventajas: Requiere dispositivos compatibles con señales de corriente y puede ser más complejo de implementar que
+las señales de voltaje.
 
 -Aplicaciones:
 Transmisión de señales de sensores de presión, temperatura, nivel y otros parámetros en procesos industriales críticos.
